@@ -52,7 +52,7 @@
         <h1 class="text-center text-4xl mb-4 mt-2 font-semibold">{{projectData.name}}</h1>
         <div class="flex flex-wrap px-7 lg:px-8">
             <div class="mx-auto w-full">
-              <video controls muted loop autoplay class="w-full lg:w-4/5 mx-auto bg-gray-700" v-if="projectData.preview_type=='video'" :src="projectData.preview_link"></video>
+              <video controls loop autoplay class="w-full lg:w-4/5 mx-auto bg-gray-700" v-if="projectData.preview_type=='video'" :src="projectData.preview_link"></video>
               <img class="w-full h-full lg:w-4/5 mx-auto bg-gray-700" v-else-if="projectData.preview_type=='image'" :src="projectData.preview_link" />
             </div>
             <div class="w-full my-3">
